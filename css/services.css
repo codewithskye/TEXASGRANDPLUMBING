@@ -1,0 +1,314 @@
+/* Services Page Styles for Texas Grand Plumbing */
+
+/* Hero Section */
+.services-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  background-image: url('../images/service.webp');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.services-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+}
+
+.services-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.services-hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Services Grid Section */
+.services-grid {
+  background-color: var(--white);
+  padding: var(--spacing-xxl) 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.service-item {
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-item-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.service-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.service-item:hover .service-item-image img {
+  transform: scale(1.1);
+}
+
+.service-item-content {
+  padding: var(--spacing-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-item-title {
+  font-size: var(--h4-size);
+  margin-bottom: var(--spacing-md);
+}
+
+.service-item-text {
+  margin-bottom: var(--spacing-lg);
+  flex: 1;
+}
+
+.service-item-features {
+  margin-bottom: var(--spacing-md);
+}
+
+.service-item-features ul {
+  list-style: none;
+}
+
+.service-item-features li {
+  margin-bottom: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+}
+
+.service-item-features li i {
+  color: var(--primary-color);
+  margin-right: var(--spacing-sm);
+}
+
+.service-item-cta {
+  margin-top: auto;
+}
+
+/* Commercial Projects Section */
+.commercial-projects {
+  background-color: var(--gray-light);
+  padding: var(--spacing-xxl) 0;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.project-item {
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-item-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.project-item:hover .project-item-image img {
+  transform: scale(1.1);
+}
+
+.project-item-content {
+  padding: var(--spacing-lg);
+}
+
+.project-item-title {
+  font-size: var(--h5-size);
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-item-location {
+  color: var(--text-light);
+  font-size: var(--small-size);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+}
+
+.project-item-location i {
+  margin-right: var(--spacing-xs);
+}
+
+.project-item-text {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Consultation Section */
+.consultation {
+  background-color: var(--white);
+  padding: var(--spacing-xxl) 0;
+}
+
+.consultation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.consultation-image {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.consultation-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.consultation-text h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.consultation-text p {
+  margin-bottom: var(--spacing-lg);
+}
+
+.consultation-features {
+  margin-bottom: var(--spacing-lg);
+}
+
+.consultation-features ul {
+  list-style: none;
+}
+
+.consultation-features li {
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+}
+
+.consultation-features li i {
+  color: var(--primary-color);
+  margin-right: var(--spacing-sm);
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .services-hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .services-hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .services-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    height: 40vh;
+  }
+  
+  .services-hero-title {
+    font-size: 2rem;
+  }
+  
+  .consultation-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .consultation-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-hero {
+    height: 30vh;
+    min-height: 200px;
+  }
+  
+  .services-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .services-list,
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-item-image {
+    height: 200px;
+  }
+}

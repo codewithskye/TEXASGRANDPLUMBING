@@ -1,0 +1,242 @@
+/* Contact Page Styles for Texas Grand Plumbing */
+
+/* Hero Section */
+.contact-hero {
+  position: relative;
+  height: 40vh;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  background-image: url('../images/service.webp');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Contact Info Section */
+.contact-info {
+  background-color: var(--white);
+  padding: var(--spacing-xxl) 0;
+}
+
+.contact-info-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.contact-details h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-details p {
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-method-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-right: var(--spacing-md);
+  flex-shrink: 0;
+}
+
+.contact-method-details h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.contact-method-details a {
+  color: var(--text-color);
+  transition: color var(--transition-fast);
+}
+
+.contact-method-details a:hover {
+  color: var(--primary-color);
+}
+
+.business-hours {
+  margin-top: var(--spacing-xl);
+}
+
+.business-hours h3 {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+}
+
+.business-hours h3 i {
+  margin-right: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+.hours-list {
+  list-style: none;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 500;
+}
+
+/* Contact Form Section */
+.contact-form-container {
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-xl);
+}
+
+.contact-form-container h3 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-submit {
+  margin-top: var(--spacing-lg);
+}
+
+/* License Info Section */
+.license-info {
+  background-color: var(--gray-light);
+  padding: var(--spacing-xxl) 0;
+  text-align: center;
+}
+
+.license-info-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.license-info h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.license-box {
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.license-number {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Map Section */
+.map-section {
+  height: 400px;
+  position: relative;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(0.5);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .contact-hero-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 30vh;
+  }
+  
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+  
+  .contact-info-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .map-section {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero {
+    height: 25vh;
+    min-height: 180px;
+  }
+  
+  .contact-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form-container {
+    padding: var(--spacing-lg);
+  }
+  
+  .map-section {
+    height: 250px;
+  }
+}
